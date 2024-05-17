@@ -1,0 +1,244 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "collation": {
+            "type": "string",
+            "defaultValue": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "databaseName": {
+            "type": "string",
+            "defaultValue": "DB01"
+        },
+        "tier": {
+            "type": "string",
+            "defaultValue": "GeneralPurpose"
+        },
+        "skuName": {
+            "type": "string",
+            "defaultValue": "GP_S_Gen5_1"
+        },
+        "maxSizeBytes": {
+            "type": "int",
+            "defaultValue": 34359738368
+        },
+        "serverName": {
+            "type": "string",
+            "defaultValue": "[parameters('serverName')]"
+        },
+        "serverLocation": {
+            "type": "string",
+            "defaultValue": "[parameters('location')]"
+        },
+        "sampleName": {
+            "type": "string",
+            "defaultValue": "AdventureWorksLT"
+        },
+        "zoneRedundant": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "licenseType": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "readScaleOut": {
+            "type": "string",
+            "defaultValue": "Disabled"
+        },
+        "numberOfReplicas": {
+            "type": "int",
+            "defaultValue": 0
+        },
+        "minCapacity": {
+            "type": "string",
+            "defaultValue": "0.5"
+        },
+        "autoPauseDelay": {
+            "type": "int",
+            "defaultValue": 60
+        },
+        "databaseTags": {
+            "type": "object",
+            "defaultValue": {}
+        },
+        "enableADS": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "enableVA": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "useVAManagedIdentity": {
+            "type": "bool",
+            "defaultValue": false,
+            "metadata": {
+                "description": "To enable vulnerability assessments, the user deploying this template must have an administrator or owner permissions."
+            }
+        },
+        "vaStoragelessEnabled": {
+            "type": "bool",
+            "defaultValue": false,
+            "metadata": {
+                "description": "Flag for enabling vulnerability assessments with express configuration (storage less), the user deploying this template must have administrator or owner permissions."
+            }
+        },
+        "enablePrivateEndpoint": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "privateEndpointNestedTemplateId": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointSubscriptionId": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointResourceGroup": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointName": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointLocation": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointSubnetId": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateLinkServiceName": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateLinkServiceServiceId": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointVnetSubscriptionId": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointVnetResourceGroup": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointVnetName": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointSubnetName": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "enablePrivateDnsZone": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "privateLinkPrivateDnsZoneFQDN": {
+            "type": "string",
+            "defaultValue": "privatelink.database.windows.net"
+        },
+        "privateLinkPrivateDnsZoneRG": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointDnsRecordUniqueId": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateEndpointTemplateLink": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateDnsForPrivateEndpointTemplateLink": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateDnsForPrivateEndpointNicTemplateLink": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "privateDnsForPrivateEndpointIpConfigTemplateLink": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "requestedBackupStorageRedundancy": {
+            "type": "string",
+            "defaultValue": "Local"
+        },
+        "maintenanceConfigurationId": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "enableSqlLedger": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "enableDigestStorage": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "digestStorageOption": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "digestStorageName": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "blobStorageContainerName": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "retentionDays": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "retentionPolicy": {
+            "type": "bool",
+            "defaultValue": true
+        },
+        "isPermissionAssigned": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "digestAccountResourceGroup": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "digestRegion": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "storageAccountdigestRegion": {
+            "type": "string",
+            "defaultValue": ""
+        },
+        "isNewDigestLocation": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "sqlLedgerTemplateLink": {
+            "type": "string",
+            "defaultValue": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.02687198/DeploymentTemplates/SqlLedger.json"
+        },
+        "availabilityZone": {
+            "type": "string",
+            "defaultValue": "NoPreference"
+        },
+        "useFreeLimit": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "freeLimitExhaustionBehavior": {
+            "type": "string",
+            "defaultValue": "AutoPause"
+        }
+    }
+}
