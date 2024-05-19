@@ -6,7 +6,7 @@
             "value": "SQL_Latin1_General_CP1_CI_AS"
         },
         "databaseName": {
-            "value": "DB02"
+            "value": "DB01"
         },
         "tier": {
             "value": "GeneralPurpose"
@@ -24,7 +24,7 @@
             "value": "eastus2"
         },
         "serverName": {
-            "value": "SQL40816898"
+            "value": ""
         },
         "zoneRedundant": {
             "value": false
