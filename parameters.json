@@ -21,7 +21,7 @@
             "value": "AdventureWorksLT"
         },
         "serverLocation": {
-            "value": "eastus2"
+            "value": "[resourceGroup().location]"
         },
         "serverName": {
             "value": ""
