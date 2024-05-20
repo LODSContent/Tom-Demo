@@ -18,7 +18,8 @@
             "type": "int"
         },
         "serverName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "sql40818153"
         },
         "serverLocation": {
             "type": "string"
