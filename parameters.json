@@ -24,7 +24,7 @@
             "value": "[resourceGroup().location]"
         },
         "serverName": {
-            "value": ""
+            "value": "sql40818153"
         },
         "zoneRedundant": {
             "value": false
